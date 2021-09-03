@@ -74,7 +74,11 @@ body {
 .sb-content-tab #wrapper {
   display: none;
 }
-
+.buttonIcon {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
 .content {
   margin-bottom: 20px;
   overflow-y: auto;
