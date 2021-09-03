@@ -88,9 +88,17 @@ body {
   text-align: center;
   font-size: 18px;
   padding: 15px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
-
+.button {
+  background-color: white;
+  border-color: teal;
+  width: 200px;
+  height: 40px;
+  text-decoration: teal;
+  border-radius: 30;
+  color: teal;
+}
 .sub-title {
   text-align: center;
   font-size: 16px;

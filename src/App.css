@@ -6,9 +6,11 @@
   height: 40vmin;
   pointer-events: none;
 }
-.backgroundHeader {
-  background-color: #61dafb;
+.photo {
+  height: 200px;
+  width: 200px;
 }
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

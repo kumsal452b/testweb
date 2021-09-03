@@ -7,6 +7,7 @@ import { DropDownListComponent } from '@syncfusion/ej2-react-dropdowns';
 import { SampleBase } from './sample-base.js';
 import { GanttComponent, Inject, Selection } from '@syncfusion/ej2-react-gantt';
 import { projectNewData } from './data';
+import image from './image.png'
 
 export default class App extends SampleBase {
   constructor() {
@@ -51,8 +52,8 @@ export default class App extends SampleBase {
           </div>
           <div class="card text-center">
             <div class="card-header">
-              <ul class="nav nav-tabs card-header-tabs" style={{ backgroundColor: 'black' }}>
-                <li class="nav-item">
+              <ul class="nav nav-tabs card-header-tabs e-justify-center e-align " style={{ backgroundColor: '#61dafb', padding: 10, justifyContent: 'space-between', flexDirection: 'row', alignItems: 'center' }}>
+                <li class="nav-item" style={{ marginBottom: 40, marginRight: 20 }}>
                   <span id="hamburger" className="e-icons menu" onClick={this.openClick.bind(this)}></span>
                 </li>
                 <li class="nav-item" style={{ marginLeft: 40 }}>
@@ -76,12 +77,21 @@ export default class App extends SampleBase {
 
                   <span id="close" className="e-icons" onClick={this.closeClick.bind(this)}></span></div>
                 <div className="sub-title">
-                  <ButtonComponent className="btn" style={{ marginBottom: 20 }}>
+
+                  <div>
+                    <img src={image} className="photo" style={{ width: 200, height: 200, borderRadius: 30 }} />
+                  </div>
+                  <hr />
+                  <ButtonComponent className="button" style={{ marginBottom: 20 }}>
                     Ana Sayfa
                   </ButtonComponent>
                   <br />
-                  <ButtonComponent className="btn" >
+                  <ButtonComponent className="button" style={{ marginBottom: 20 }} >
                     Ayarlar
+                  </ButtonComponent>
+                  <br />
+                  <ButtonComponent className="button"  >
+                    Cikis
                   </ButtonComponent>
                 </div>
               </SidebarComponent>
@@ -95,6 +105,7 @@ export default class App extends SampleBase {
         </div>
 
         <div className='control-pane'>
+
           <div className='control-section'>
             <GanttComponent id='Default' dataSource={projectNewData} taskFields={this.taskFields} labelSettings={this.labelSettings} height='410px' projectStartDate={this.projectStartDate} projectEndDate={this.projectEndDate}>
               <Inject services={[Selection]} />
