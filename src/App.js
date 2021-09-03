@@ -8,7 +8,7 @@ import { SampleBase } from './sample-base.js';
 import { GanttComponent, Inject, Selection } from '@syncfusion/ej2-react-gantt';
 import { projectNewData } from './data';
 import image from './image.png'
-
+import { IconName } from "react-icons/fa";
 export default class App extends SampleBase {
   constructor() {
     super(...arguments);
@@ -84,6 +84,7 @@ export default class App extends SampleBase {
                   <hr />
                   <ButtonComponent className="button" style={{ marginBottom: 20 }}>
                     Ana Sayfa
+                    <IconName />
                   </ButtonComponent>
                   <br />
                   <ButtonComponent className="button" style={{ marginBottom: 20 }} >
