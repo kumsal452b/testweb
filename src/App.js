@@ -49,9 +49,28 @@ export default class App extends SampleBase {
           <div className="col-lg-12 col-sm-12 col-md-12 center">
             <a className="e-btn" id="newTab" onClick={this.newTabClick.bind(this)} target="_blank">Open in new tab</a>
           </div>
+          <div class="card text-center">
+            <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs" style={{ backgroundColor: 'black' }}>
+                <li class="nav-item">
+                  <span id="hamburger" className="e-icons menu" onClick={this.openClick.bind(this)}></span>
+                </li>
+                <li class="nav-item" style={{ marginLeft: 40 }}>
+                  <a class="nav-link active" href="#">Active tab</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Tab</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled tab</a>
+                </li>
+              </ul>
+            </div>
+          </div>
           <div id="wrapper">
             <div className="col-lg-12 col-sm-12 col-md-12" id="sidebar-section">
-              <span id="hamburger" className="e-icons menu" onClick={this.openClick.bind(this)}></span>
+
+
               <SidebarComponent id="default-sidebar" ref={Sidebar => this.sidebarInstance = Sidebar}>
                 <div className="title-header">
 
