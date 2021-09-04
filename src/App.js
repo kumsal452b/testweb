@@ -41,9 +41,11 @@ export default class App extends SampleBase {
     this.projectStartDate = new Date('03/24/2019');
     this.projectEndDate = new Date('07/06/2019');
   }
+
   render() {
     return (
       <div>
+
         <div className="control-section">
           <div className="col-lg-12 col-sm-12 col-md-12 center">
             Click/Touch the button to view the sample
