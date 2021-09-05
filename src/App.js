@@ -1,5 +1,7 @@
 import { render } from 'react-dom';
 import './index.css';
+import './css/bootstrap.css'
+import './js/bootstrap'
 import * as React from 'react';
 import { SidebarComponent } from '@syncfusion/ej2-react-navigations';
 import { Button, ButtonComponent } from '@syncfusion/ej2-react-buttons';
@@ -45,7 +47,14 @@ export default class App extends SampleBase {
   render() {
     return (
       <div>
-
+        <table className="table">
+          <tr>
+            <td>deneme</td>
+            <td>deneme</td>
+            <td>deneme</td>
+            <td>deneme</td>
+          </tr>
+        </table>
         <div className="control-section">
           <div className="col-lg-12 col-sm-12 col-md-12 center">
             Click/Touch the button to view the sample
